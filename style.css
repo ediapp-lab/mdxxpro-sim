@@ -1,0 +1,29 @@
+/* Tailwind-like minimalist styles (no build tool needed for this file) */
+* { box-sizing: border-box; }
+button { cursor: pointer; }
+.bg-amber-500 { background-color: #f59e0b; color: #111827; }
+.bg-gray-700 { background-color: #374151; color: #e5e7eb; }
+.bg-gray-800 { background-color: #1f2937; color: #e5e7eb; }
+.text-gray-300 { color: #d1d5db; }
+.text-gray-400 { color: #9ca3af; }
+.text-amber-400 { color: #fbbf24; }
+.rounded { border-radius: .5rem; }
+.rounded-xl { border-radius: .75rem; }
+.p-2 { padding: .5rem; } .p-3 { padding: .75rem; } .p-4 { padding: 1rem; } .p-6 { padding: 1.5rem; }
+.mb-2 { margin-bottom: .5rem; } .mb-4 { margin-bottom: 1rem; }
+.grid { display: grid; } .place-items-center { place-items: center; }
+.min-h-screen { min-height: 100vh; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: .5rem; } .gap-4 { gap: 1rem; }
+.w-full { width: 100%; } .max-w-md { max-width: 28rem; }
+.font-semibold { font-weight: 600; } .font-bold { font-weight: 700; }
+.text-sm { font-size: .875rem; } .text-lg { font-size: 1.125rem; } .text-xl { font-size: 1.25rem; }
+.animate-spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (min-width: 768px) { .md\:col-span-2 { grid-column: span 2 / span 2; } .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.rounded-full { border-radius: 9999px; }
+.border-4 { border-width: 4px; }
+.border-t-transparent { border-top-color: transparent; }
+
